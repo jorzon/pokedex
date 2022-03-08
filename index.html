@@ -20,7 +20,6 @@
         body {
             background: #ededed;
             margin: 0;
-            padding: 24px;
             text-align: center;
             color: #333;
         }
@@ -29,14 +28,14 @@
             color: #fff;
             background: #333;
         }
-        
-        .link {
+        /* .link {
             margin-bottom: 24px;
         }
+         */
         
         .lg {
             width: 200px;
-            margin-bottom: 24px;
+            margin-bottom: 12px;
         }
         
         .link {
@@ -182,14 +181,32 @@
         figure.dark-theme {
             background: #464646;
         }
+        
+        .content {
+            width: 100%;
+            padding: 24px 24px 16px;
+            position: sticky;
+            top: 0;
+            background: #ededed;
+            margin-bottom: 24px;
+            border-bottom: 1px solid #d3d3d3;
+        }
+        
+        .content.dark-theme {
+            background: #464646;
+            border-bottom: 1px solid #5e5e5e;
+        }
     </style>
 </head>
 
 <body dark-theme>
-    <img width="150" class="lg" src="assets/2560px-International_Pokemon_logo.png" alt="">
-    <nav class="link">
 
-    </nav>
+    <div class="content" dark-theme>
+        <img width="150" class="lg" src="assets/2560px-International_Pokemon_logo.png" alt="">
+        <nav class="link">
+
+        </nav>
+    </div>
 
     <main class="grid-fluid">
         <!-- contenido -->
