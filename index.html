@@ -18,24 +18,33 @@
         }
         
         body {
-            background: #333;
+            background: #ededed;
             margin: 0;
             padding: 24px;
             text-align: center;
+            color: #333;
+        }
+        
+        body.dark-theme {
+            color: #fff;
+            background: #333;
         }
         
         .link {
             margin-bottom: 24px;
         }
         
-        h2 {
-            color: #fff;
-            text-align: center;
+        .lg {
+            width: 200px;
+            margin-bottom: 24px;
         }
         
-        .lg {
-            width: 250px;
-            margin-bottom: 24px;
+        .link {
+            font-size: 25px;
+        }
+        
+        .link a {
+            text-decoration: none;
         }
         
         img {
@@ -46,16 +55,19 @@
         .grid-fluid {
             display: flex;
             flex-wrap: wrap;
-            width: 1120px;
+            width: 100%;
+            max-width: 1120px;
+            justify-content: center;
             margin: auto;
         }
         
         figure {
-            width: 200px;
-            padding: 24px;
+            width: 250px;
+            padding: 16px 12px;
             height: auto;
             border-radius: 8px;
             margin: 0 12px 12px;
+            /* background-color: #464646; */
             background-color: #fff;
             font-size: 16px;
             text-align: center;
@@ -63,19 +75,38 @@
         
         figcaption .name {
             font-size: 16px;
+            text-transform: capitalize;
             margin-bottom: 8px;
-            font-weight: bold;
             display: inline-block;
+            font-weight: bold;
             width: 100%;
-            text-transform: uppercase;
         }
         
         figcaption .type {
             font-weight: 300;
             border-radius: 4px;
-            font-size: 12px;
+            font-size: 13px;
+            display: inline-block;
             padding: 4px 8px;
             color: white !important;
+        }
+        
+        #dark-btn {
+            background: #333;
+            width: 48px;
+            border-radius: 50%;
+            height: 48px;
+            cursor: pointer;
+            font-size: 25px;
+            text-align: center;
+            padding-top: 5px;
+            position: fixed;
+            top: 24px;
+            right: 24px;
+        }
+        
+        #dark-btn.dark-theme {
+            background: #fff;
         }
         
         figcaption .grass {
@@ -145,22 +176,29 @@
         figcaption .ghost {
             background: #b99dd4;
         }
+        
+        figure.dark-theme {
+            background: #464646;
+        }
     </style>
 </head>
 
-<body>
-    <img width="250" class="lg" src="assets/2560px-International_Pokemon_logo.png" alt="">
+<body dark-theme>
+    <img width="150" class="lg" src="assets/2560px-International_Pokemon_logo.png" alt="">
     <nav class="link">
-        <!-- <span id="prev">prev</span>
-        <span id="next">next</span> -->
+
     </nav>
 
     <main class="grid-fluid">
-
+        <!-- contenido -->
     </main>
 
+    <div id="dark-btn" dark-theme></div>
 
-    <script src="pokemon-api.js"></script>
+
+    <script src="pokemon-api.js" type="module"></script>
+    <!-- <script src="theme.js"></script> -->
+
 </body>
 
 </html>
