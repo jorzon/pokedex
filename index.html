@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&display=swap" rel="stylesheet">
+    <title>POKEMÓN</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Roboto';
+        }
+        
+        body {
+            background: #333;
+            margin: 0;
+            padding: 24px;
+            text-align: center;
+        }
+        
+        .link {
+            margin-bottom: 24px;
+        }
+        
+        h2 {
+            color: #fff;
+            text-align: center;
+        }
+        
+        .lg {
+            width: 250px;
+            margin-bottom: 24px;
+        }
+        
+        img {
+            display: block;
+            margin: auto;
+        }
+        
+        .grid-fluid {
+            display: flex;
+            flex-wrap: wrap;
+            width: 1120px;
+            margin: auto;
+        }
+        
+        figure {
+            width: 200px;
+            padding: 24px;
+            height: auto;
+            border-radius: 8px;
+            margin: 0 12px 12px;
+            background-color: #fff;
+            font-size: 16px;
+            text-align: center;
+        }
+        
+        figcaption .name {
+            font-size: 16px;
+            margin-bottom: 8px;
+            font-weight: bold;
+            display: inline-block;
+            width: 100%;
+            text-transform: uppercase;
+        }
+        
+        figcaption .type {
+            font-weight: 300;
+            border-radius: 4px;
+            font-size: 12px;
+            padding: 4px 8px;
+            color: white !important;
+        }
+        
+        figcaption .grass {
+            background: green;
+        }
+        
+        figcaption .fire {
+            background: red;
+        }
+        
+        figcaption .water {
+            background: #00b9ff;
+        }
+        
+        figcaption .bug {
+            background: #ffa600;
+        }
+        
+        figcaption .normal {
+            background: #333;
+        }
+        
+        figcaption .poison {
+            background: #8a12a9;
+        }
+        
+        figcaption .ground {
+            background: #9e9123;
+        }
+        
+        figcaption .fairy {
+            background: #ffb7b7;
+        }
+        
+        figcaption .electric {
+            background: #ecd933;
+        }
+        
+        figcaption .fighting {
+            background: #ff7000;
+        }
+        
+        figcaption .psychic {
+            background: #b38228;
+        }
+        
+        figcaption .rock {
+            background: #7f7f6c;
+        }
+        
+        figcaption .ice {
+            background: #a2e5ff;
+        }
+        
+        figcaption .dragon {
+            background: #d43300;
+        }
+        
+        figcaption .steel {
+            background: #626262;
+        }
+        
+        figcaption .dark {
+            background: #482b65;
+        }
+        
+        figcaption .ghost {
+            background: #b99dd4;
+        }
+    </style>
+</head>
+
+<body>
+    <img width="250" class="lg" src="assets/2560px-International_Pokemon_logo.png" alt="">
+    <nav class="link">
+        <!-- <span id="prev">prev</span>
+        <span id="next">next</span> -->
+    </nav>
+
+    <main class="grid-fluid">
+
+    </main>
+
+
+    <script src="pokemon-api.js"></script>
+</body>
+
+</html>
